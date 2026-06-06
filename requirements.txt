@@ -3,5 +3,7 @@ numpy
 scikit-learn
 xgboost
 statsmodels
+scipy
 optuna
 jupyter
+kaggle
