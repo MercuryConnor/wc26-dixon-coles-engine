@@ -29,6 +29,7 @@ MEMORY.md
 MODEL_EXPERIMENT_PROTOCOL.md
 docs/superpowers/plans/*.md
 docs/superpowers/specs/*.md
+docs/
 
 # Data
 data/raw/*.csv
