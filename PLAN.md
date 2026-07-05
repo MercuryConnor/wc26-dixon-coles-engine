@@ -82,3 +82,4 @@ Update the first few cells of the notebook to use our new loader, ensuring the `
 
 - [ ] **Step 1: Create feature engineering skeleton**
 Define functions for team encoding and historical average merging.
+

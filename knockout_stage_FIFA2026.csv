@@ -1,0 +1,33 @@
+match_id,round,multiplier,slot_home,slot_away,predicted_home_goals,predicted_away_goals,match_winner,penalties,predicted_home_team,predicted_away_team,corners,yellow_cards,red_cards
+73,Round of 32,1,Runner-up Group A,Runner-up Group B,1,1,home,True,Mexico,Canada,7,5,0
+74,Round of 32,1,Winner Group C,Runner-up Group F,2,1,home,False,Brazil,Japan,14,6,0
+75,Round of 32,1,Winner Group E,Best 3rd (Groups A/B/C/D/F),1,1,home,True,Germany,UEFA Playoff A,8,2,0
+76,Round of 32,1,Winner Group F,Runner-up Group C,1,1,away,True,Netherlands,Morocco,13,7,0
+77,Round of 32,1,Runner-up Group E,Runner-up Group I,1,1,away,True,Ecuador,France,9,3,0
+78,Round of 32,1,Winner Group I,Best 3rd (Groups C/D/F/G/H),2,1,home,False,France,Paraguay,8,2,0
+79,Round of 32,1,Winner Group A,Best 3rd (Groups C/E/F/H/I),1,1,home,True,Mexico,Côte d'Ivoire,13,2,0
+80,Round of 32,1,Winner Group L,Best 3rd (Groups E/H/I/J/K),1,1,home,True,England,Cabo Verde,7,3,0
+81,Round of 32,1,Winner Group G,Best 3rd (Groups A/E/H/I/J),2,1,home,False,Belgium,Austria,12,3,0
+82,Round of 32,1,Winner Group D,Best 3rd (Groups B/E/F/I/J),1,1,away,True,USA,Scotland,5,4,0
+83,Round of 32,1,Runner-up Group K,Runner-up Group L,2,1,home,False,Portugal,Croatia,12,6,0
+84,Round of 32,1,Winner Group H,Runner-up Group J,3,1,home,False,Spain,Austria,5,2,0
+85,Round of 32,1,Winner Group B,Best 3rd (Groups E/F/G/I/J),2,1,home,False,Switzerland,Iran,9,2,0
+86,Round of 32,1,Runner-up Group D,Runner-up Group G,1,1,away,True,USA,Iran,7,2,0
+87,Round of 32,1,Winner Group J,Runner-up Group H,1,1,home,True,Argentina,Uruguay,10,8,0
+88,Round of 32,1,Winner Group K,Best 3rd (Groups D/E/I/J/L),3,1,home,False,Portugal,Ghana,8,7,0
+89,Round of 16,2,Winner Match 73,Winner Match 75,1,1,away,True,Mexico,Germany,13,2,0
+90,Round of 16,2,Winner Match 74,Winner Match 77,1,1,home,True,Brazil,Ecuador,6,4,0
+91,Round of 16,2,Winner Match 76,Winner Match 78,1,1,away,True,Netherlands,France,12,6,0
+92,Round of 16,2,Winner Match 79,Winner Match 80,1,1,away,True,Mexico,England,11,6,0
+93,Round of 16,2,Winner Match 83,Winner Match 84,1,2,away,False,Croatia,Spain,10,2,0
+94,Round of 16,2,Winner Match 81,Winner Match 82,1,1,home,True,Belgium,USA,8,4,0
+95,Round of 16,2,Winner Match 86,Winner Match 88,1,2,away,False,Egypt,Portugal,10,8,0
+96,Round of 16,2,Winner Match 85,Winner Match 87,1,2,away,False,Switzerland,Argentina,7,6,0
+97,Quarter-final,4,Winner Match 89,Winner Match 90,1,1,away,True,Germany,Brazil,10,4,0
+98,Quarter-final,4,Winner Match 93,Winner Match 94,2,1,home,False,Spain,Belgium,8,3,0
+99,Quarter-final,4,Winner Match 91,Winner Match 92,2,2,home,True,Netherlands,England,10,4,0
+100,Quarter-final,4,Winner Match 95,Winner Match 96,1,1,away,True,Portugal,Argentina,8,2,0
+101,Semi-final,8,Winner Match 97,Winner Match 98,1,2,away,False,Germany,Spain,6,8,0
+102,Semi-final,8,Winner Match 99,Winner Match 100,1,1,away,True,Netherlands,Argentina,7,2,0
+103,Third-place playoff,8,Loser Match 101,Loser Match 102,2,1,home,False,Netherlands,Germany,7,2,0
+104,Final,16,Winner Match 101,Winner Match 102,2,2,home,True,Spain,Argentina,5,5,0

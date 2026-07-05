@@ -1,8 +1,7 @@
-import os
 from pathlib import Path
 
 def test_raw_data_exists():
-    raw_data_dir = Path(__file__).resolve().parents[2] / 'data' / 'raw'
+    raw_data_dir = Path(__file__).resolve().parents[1] / "data" / "raw"
     results_file = raw_data_dir / 'results.csv'
     assert results_file.exists(), f"Missing {results_file}"
 

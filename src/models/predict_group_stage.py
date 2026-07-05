@@ -1,16 +1,23 @@
+from pathlib import Path
 import pandas as pd
 import numpy as np
-import os
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DATA_DIR = PROJECT_ROOT / "data"
+PROCESSED_DIR = DATA_DIR / "processed"
+SUBMISSIONS_DIR = PROJECT_ROOT / "submissions"
+
+SUBMISSIONS_DIR.mkdir(parents=True, exist_ok=True)
 
 def predict_group_stage():
     # Paths
-    features_path = 'data/processed/team_features.csv'
+    features_path = PROCESSED_DIR / "team_features.csv"
     # Try both locations for fixtures as specified
-    fixtures_path = 'data/raw/group_fixtures.csv'
-    if not os.path.exists(fixtures_path):
-        fixtures_path = 'data/group_fixtures.csv'
-    
-    output_path = 'submissions/group_stage_goal_predictions.csv'
+    fixtures_path = DATA_DIR / "raw" / "group_fixtures.csv"
+    if not fixtures_path.exists():
+        fixtures_path = DATA_DIR / "group_fixtures.csv"
+
+    output_path = SUBMISSIONS_DIR / "group_stage_goal_predictions.csv"
 
     # Load data
     try:
@@ -56,7 +63,7 @@ def predict_group_stage():
         })
 
     # Save predictions
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     df_out = pd.DataFrame(predictions)
     df_out.to_csv(output_path, index=False)
     print(f"Predictions saved to {output_path}")

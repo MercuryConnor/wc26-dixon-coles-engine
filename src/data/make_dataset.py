@@ -1,4 +1,3 @@
-import os
 import logging
 from pathlib import Path
 from kaggle.api.kaggle_api_extended import KaggleApi

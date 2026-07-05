@@ -49,9 +49,9 @@ def build_features():
     # Current file is in src/features/build_features.py
     # parents[2] gets us to the root: D:\Mrityunjay\Projects\FIfa2026
     project_root = Path(__file__).resolve().parents[2]
-    raw_data_path = project_root / 'data' / 'raw' / 'results.csv'
-    processed_data_dir = project_root / 'data' / 'processed'
-    output_path = processed_data_dir / 'team_features.csv'
+    raw_data_path = project_root / "data" / "raw" / "results.csv"
+    processed_data_dir = project_root / "data" / "processed"
+    output_path = processed_data_dir / "team_features.csv"
     
     # Load data
     if not raw_data_path.exists():

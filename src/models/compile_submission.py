@@ -1,14 +1,17 @@
+from pathlib import Path
 import pandas as pd
-import os
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+SUBMISSIONS_DIR = PROJECT_ROOT / "submissions"
 
 def compile_submission():
     """
     Loads group and knockout predictions, merges them, and standardizes for submission.
     """
-    group_path = 'submissions/group_stage_goal_predictions.csv'
-    knockout_path = 'submissions/knockout_stage_predictions.csv'
-    output_path = 'submissions/submission.csv'
-    
+    group_path = SUBMISSIONS_DIR / "group_stage_goal_predictions.csv"
+    knockout_path = SUBMISSIONS_DIR / "knockout_stage_predictions.csv"
+    output_path = SUBMISSIONS_DIR / "submission.csv"
+
     print(f"Loading {group_path}...")
     group_df = pd.read_csv(group_path)
     print(f"Loading {knockout_path}...")

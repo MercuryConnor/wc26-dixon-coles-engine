@@ -1,13 +1,20 @@
 import pandas as pd
 import numpy as np
-import os
 import re
+from pathlib import Path
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DATA_DIR = PROJECT_ROOT / "data"
+PROCESSED_DIR = DATA_DIR / "processed"
+SUBMISSIONS_DIR = PROJECT_ROOT / "submissions"
+SUBMISSIONS_DIR.mkdir(parents=True, exist_ok=True)
 
 def load_data():
     # Load required dataframes
-    standings = pd.read_csv('data/processed/group_standings.csv')
-    features = pd.read_csv('data/processed/team_features.csv')
-    slots = pd.read_csv('data/knockout_slots.csv')
+    standings = pd.read_csv(PROCESSED_DIR / "group_standings.csv")
+    features = pd.read_csv(PROCESSED_DIR / "team_features.csv")
+    slots = pd.read_csv(DATA_DIR / "knockout_slots.csv")
     return standings, features, slots
 
 def get_advancing_teams(standings):
@@ -140,8 +147,7 @@ def main():
     
     # Save output
     df_results = pd.DataFrame(results)
-    os.makedirs('submissions', exist_ok=True)
-    output_file = 'submissions/knockout_stage_predictions.csv'
+    output_file = SUBMISSIONS_DIR / "knockout_stage_predictions.csv"
     df_results.to_csv(output_file, index=False)
     print(f"Knockout predictions saved to {output_file}")
 
